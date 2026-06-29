@@ -8,7 +8,7 @@ workflows:
     environment:
       vars:
         BUNDLE_ID: com.gayapplist.app
-        XCODE_WORKSPACE: ios/App/App.xcworkspace
+        XCODE_PROJECT: ios/App/App.xcodeproj
         XCODE_SCHEME: App
         CERTIFICATE_PRIVATE_KEY: |
           -----BEGIN RSA PRIVATE KEY-----
@@ -59,15 +59,16 @@ workflows:
       - name: Build iOS
         script: |
           xcodebuild \
-            -workspace "$XCODE_WORKSPACE" \
+            -project "$XCODE_PROJECT" \
             -scheme "$XCODE_SCHEME" \
             -configuration Release \
             -archivePath build/GayAppList.xcarchive \
+            -allowProvisioningUpdates \
             archive
       - name: Export IPA
         script: |
           xcode-project build-ipa \
-            --workspace "$XCODE_WORKSPACE" \
+            --project "$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
