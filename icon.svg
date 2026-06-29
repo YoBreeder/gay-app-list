@@ -1,0 +1,33 @@
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="roundclip">
+      <rect x="0" y="0" width="500" height="500" rx="100"/>
+    </clipPath>
+    <linearGradient id="rbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E40303"/>
+      <stop offset="20%" stop-color="#FF8C00"/>
+      <stop offset="40%" stop-color="#FFED00"/>
+      <stop offset="60%" stop-color="#008026"/>
+      <stop offset="80%" stop-color="#004DFF"/>
+      <stop offset="100%" stop-color="#750787"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="500" height="500" rx="100" fill="#0d0d1a"/>
+
+  <g clip-path="url(#roundclip)">
+    <rect x="0" y="280" width="500" height="45" fill="#E40303"/>
+    <rect x="0" y="325" width="500" height="45" fill="#FF8C00"/>
+    <rect x="0" y="370" width="500" height="45" fill="#FFED00"/>
+    <rect x="0" y="415" width="500" height="45" fill="#008026"/>
+    <rect x="0" y="460" width="500" height="45" fill="#004DFF"/>
+  </g>
+
+  <rect x="0" y="280" width="500" height="220" fill="#0d0d1a" opacity="0.55" clip-path="url(#roundclip)"/>
+
+  <text x="85" y="268" font-family="Arial Black, Arial, sans-serif" font-size="200" font-weight="900" fill="#ff6b9d" text-anchor="middle">G</text>
+  <text x="250" y="268" font-family="Arial Black, Arial, sans-serif" font-size="200" font-weight="900" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="415" y="268" font-family="Arial Black, Arial, sans-serif" font-size="200" font-weight="900" fill="#ffd700" text-anchor="middle">L</text>
+
+  <rect x="40" y="278" width="420" height="5" rx="2.5" fill="url(#rbow)" opacity="0.7"/>
+</svg>
