@@ -10,6 +10,34 @@ workflows:
         BUNDLE_ID: com.gayapplist.app
         XCODE_WORKSPACE: ios/App/App.xcworkspace
         XCODE_SCHEME: App
+        CERTIFICATE_PRIVATE_KEY: |
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEpAIBAAKCAQEAo4TRazCmOTvqtiU6fJXih1DoXGn4+bLKKaZDW3WLNsZGx7M0
+          onAR1aUO+KHQndpiaaeChtok8BikWKZ7qKGUUi9mQZ6EPPzECUaqqjKwGy5qobZz
+          rqOjhE5ekINoOSADMp43cnTfuHnPNfeoy7Ccbc6FM+fAiGv8WIeMTJKDI5BPnhYi
+          mOJuWwy0ZGbkb9IqPF3qGTn91QEBJCV/HRIgRIMRgajH61oEvBddwtTDZsie+8LH
+          Rt7IDPTReC8qB0psz39GusgWr+lNelrhJlpbN7864+ft04AQHpSQcp9jQpPbiI1Y
+          JCaQX9/eaGjli8jdDkd/1lvTFXPk7EzLHe0AtwIDAQABAoIBAAODIHsR7MVr8Qr/
+          2mAUrsHt+J+2Mv/XWZpIFPL2SmA0erliswMOLy6Mlg68bbOw83jbfTqSSEV+nKu+
+          ylyBOU4D8J6riKGauEc5ZQRfhFgryLnie7JI7Nk0VGRRk5Uuh9hi0kQQw0Foybea
+          CIkffldUHpj9Ja3dy+ocNzo/J2FFznGXr+Hit5mtc7YU9ViPjzmKteNtZHyC9A5X
+          NXrkKXreKViRZZBzJbMXdUPirxMkPiAY4zn+akiusrexbLrUPZy9nhBQkAK7xRWc
+          +shwSj+8FgsdPhBec/adW9E4eiBLUChtgtXW6t9CKC+mNudAVvwzQhGD3hcD/w9b
+          cvkhsmkCgYEA2bN3xPxqT5horOmnnQLFfqoBLt5gICTwagL2PuT9etqiCdTl7HUu
+          LEG0bscRFo9+ZhNDgfx/bh+F7Xcj+3sKppWtsfrBhHgJjYUofuREU1u6x+xy/bNT
+          KctPIgWTkROPp4WyrkJ3xNgJiu/tSi0IJ5CfCfsx+Ln6U7xjnys+zLUCgYEAwEkp
+          pUgZCiNho8h2RlyT9A4pL7eeDKAaL7fmPGG7OWHxPMRUI+5QEcgSunv8XMsMKLiq
+          UBo+kNTyHyi5Y3vjEOnhEyfvt/3W7q/lYmywXdCPT2gZIFQ3BgR3fGJx173hJJmd
+          38Uda0tFql/63rIAQbqZExYJnTZrjNGdNv8bZzsCgYEAnXyZHiXD+oS05LG7EXiZ
+          yoHNjUxNmbNfQDGYVfNt89wJ8LbVBfPXTSjTEHhtwjZYKBuzcGtq/A1N43WW0Cw4
+          jj4lg2V1bRExR/GWVAVp8CuhuVMx9JovhUKQonoKQJ84AuZTVoC7B+mJLbtXm5ts
+          FMMoah4QDnDryHu2TcUJDykCgYAKh7ctIv6kDH37Xy4C+mzrz563y0FvhZEJjfOg
+          2OVM5i0027eT5CgkYSWNat7OIhx/WmWRT26ftdmwlSVZ6l3r/jLiPqylEdSka6OP
+          OU6LRLGkcpn1qEb/IF1+xVFgtDhRLcx0hbHvv0aIZwsxCOR0tQhPAET0hBdttcj7
+          SwswIwKBgQCzixFdC8dbn4cpnjcVFHufBylZ/LDkR+bpx4sDaJAcatYO0kWq1SjM
+          c3/kHJGPo7zTKUWPzsHcyINdy7UzJeduJKBml3QE5iOvtuUi0+uijlPvmGCdvcC8
+          EnY2HecEL6ho5E+vpx5/IZu1TLOqsMGMcPj08UtPFk2DK+UUwNHDww==
+          -----END RSA PRIVATE KEY-----
     scripts:
       - name: Install dependencies
         script: npm ci
